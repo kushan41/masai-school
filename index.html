@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Layout</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff6200;
+}
+
+header p {
+    font-size: 18px;
+    color: #333;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.discount {
+    display: inline-block;
+    background-color: #ff6200;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.price {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+.banner {
+    grid-column: span 4;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffe6cc;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #ff6200;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diwali with Mi</h1>
+        <p>Save Up to 65% on Chargers & Cables</p>
+    </header>
+
+    <section class="product-grid">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/61PgbNpEkdL._SX679_.jpg" alt="Redmi Buds 5">
+            <h3>Redmi Buds 5</h3>
+            <span class="discount">56% off</span>
+            <p class="price">₹2,199 <span class="original-price">₹4,999</span></p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="https://5.imimg.com/data5/ANDROID/Default/2023/4/303911314/JX/TH/EI/180797080/product-jpeg-500x500.jpg" alt="Mi Dual Driver In-ear Earphones">
+            <h3>Mi Dual Driver In-ear Earphones</h3>
+            <span class="discount">20% off</span>
+            <p class="price">₹799 <span class="original-price">₹999</span></p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="https://www.jiomart.com//images/product/240x240/rvndwy7b5m/redmi-sonic-bass-wireless-earphones-2-blue-product-images-orvndwy7b5m-p607743624-0-202402031709.jpg" alt="Redmi Sonic Bass Wireless Earphones 2">
+            <h3>Redmi Sonic Bass Wireless Earphones 2</h3>
+            <span class="discount">56% off</span>
+            <p class="price">₹1,299 <span class="original-price">₹2,999</span></p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/412ytmMJKCS._SX300_SY300_QL70_FMwebp_.jpg" alt="Mi Portable Bluetooth Speaker">
+            <h3>Mi Portable Bluetooth Speaker (16W)</h3>
+            <span class="discount">42% off</span>
+            <p class="price">₹1,999 <span class="original-price">₹3,499</span></p>
+        </div>
+
+        <!-- Banner -->
+        <div class="banner">
+            <p>Save Up to 65% on Chargers & Cables</p>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product">
+            <img src="https://i01.appmifile.com/webfile/globalimg/xm_event/in/f86ec5bd2fb82b433b8778e726129de4.jpg" alt="Mi 67W SonicCharge 3.0 Charger Combo">
+            <h3>Mi 67W SonicCharge 3.0 Charger Combo</h3>
+            <span class="discount">45% off</span>
+            <p class="price">₹1,649 <span class="original-price">₹2,999</span></p>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product">
+            <img src="https://i01.appmifile.com/v1/MI_18455B3E4DA706226CF7535A58E875F0267/pms_1575870690.22854399!600x600!85.jpg" alt="Mi 2A Fast Charger with Cable">
+            <h3>Mi 2A Fast Charger with Cable</h3>
+            <span class="discount">33% off</span>
+            <p class="price">₹399 <span class="original-price">₹599</span></p>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOkp5NJ3V4OJxFgnAHs_9Famv0HaTV0CnCOw&s" alt="Xiaomi SonicCharge 2.0 Cable">
+            <h3>Xiaomi SonicCharge 2.0 Cable</h3>
+            <span class="discount">71% off</span>
+            <p class="price">₹199 <span class="original-price">₹699</span></p>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/41-vV2L9JpL._AC_UF1000,1000_QL80_.jpg" alt="Mi 18W Dual Port Charger + Cable">
+            <h3>Mi 18W Dual Port Charger + Mi USB Cable 120cm</h3>
+            <span class="discount">35% off</span>
+            <p class="price">₹899 <span class="original-price">₹1,397</span></p>
+        </div>
+    </section>
+</body>
+</html>
